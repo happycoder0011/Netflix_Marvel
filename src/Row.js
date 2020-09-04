@@ -14,7 +14,7 @@ function Row(props) {
         }
         fetchData();
     }, [props.fetchUrl]);
-    console.log(movies);
+
     //[] is called dependies if it is like blank [],it will run once the row loads and dont run again
     //if it is populated such as [movies] it will run everytime movies changes
     return (
@@ -23,11 +23,13 @@ function Row(props) {
             <h2>{props.title}</h2>
             <div className="row__posters">
                 {movies.map(movie => (
-                    <img key={movie.id}
+                    <> <img key={movie.id}
                         className="row__poster"
                         src={movie.thumbnail.path + "." + movie.thumbnail.extension}
                         alt={movie.name} />
+                    </>
                 ))}
+
             </div>
             {/*Container ->poster */}
 

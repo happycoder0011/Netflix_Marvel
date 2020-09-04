@@ -1,3 +1,6 @@
+.row{
+    margin-left: 20px;
+}
 .row__poster{
     width: 100%;
     object-fit: contain;
@@ -6,7 +9,10 @@
     transition: transform 450ms;
     margin-right: 10px;
 }
-
+.caption{
+    display: block;
+    clear: both;
+}
 .row__posters{
     display: flex;
     overflow-y: hidden;
