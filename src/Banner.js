@@ -9,7 +9,7 @@ export default function Banner() {
 
     useEffect(() => {
         async function fetchData() {
-            const request = await instance.get(requests.fetchtcharacters);
+            const request = await instance.get(requests.fetchadam);
             setComics(request.data.data.results[
                 Math.floor(Math.random() * request.data.data.results.length - 1)]);
 
@@ -21,7 +21,9 @@ export default function Banner() {
             style={{
                 backgroundSize: "cover",
                 backgroundImage: `url(
+                    "https://gateway.marvel.com/${comics?.backdrop}"
              )`,
+                backgroundPosition: "center center",
             }}
         >
 
