@@ -1,5 +1,6 @@
 .row{
     margin-left: 20px;
+    color: white;
 }
 .row__poster{
     width: 100%;
@@ -8,10 +9,6 @@
 
     transition: transform 450ms;
     margin-right: 10px;
-}
-.caption{
-    display: block;
-    clear: both;
 }
 .row__posters{
     display: flex;
@@ -25,4 +22,14 @@
 .row__poster:hover {
     transform: scale(1.1);
     opacity: 0.8;
+}
+
+.highlight{
+    height: 2rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        black
+    );
 }

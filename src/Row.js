@@ -32,7 +32,7 @@ function Row(props) {
 
             </div>
             {/*Container ->poster */}
-
+         <div className="highlight"></div>
         </div>
     )
 }
